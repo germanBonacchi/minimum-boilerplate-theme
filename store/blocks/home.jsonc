@@ -11,8 +11,8 @@
       "responsive-layout.mobile#mobile",
       "tab-layout#home",
       "modal-trigger#first",
-      "list-context.product-list"/*,
-      "stack-layout#cta"*/
+      "list-context.product-list",
+      "stack-layout#cta"
     ]
   },
   "rich-text": {
@@ -235,7 +235,7 @@
       "product-summary-quantity",
       "add-to-cart-button"
     ]
-  }/*,
+  },
   "stack-layout#cta": {
     "children": [
       "image#cta",
@@ -260,5 +260,5 @@
       "href": "/washer",
       "label": "Check these awesome discounts"
     }
-  }*/
+  }
 }
