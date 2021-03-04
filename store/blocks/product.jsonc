@@ -3,7 +3,8 @@
     "children": [
       "condition-layout.product",
       "flex-layout.row#product-breadcrumb",
-      "flex-layout.row#product-main"
+      "flex-layout.row#product-main",
+      "condition-layout.product#bottom"
     ]
   },
   "flex-layout.row#product-breadcrumb": {
@@ -91,5 +92,69 @@
        "height": "200px",
        "blockClass": "cover"
      }
+  },
+  "condition-layout.product#bottom": {
+    "children": [
+      "condition.product#bottom-retro-mixer"
+    ]
+  },
+  "condition.product#bottom-retro-mixer": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "20"
+        }
+      ]
+    },
+    "children": ["tab-layout#bottom-retro-mixer"]
+  },
+  "tab-layout#bottom-retro-mixer": {
+    "children": [
+      "tab-list#product-retro-mixer",
+      "tab-content#product-retro-mixer"
+    ]
+  },
+  "tab-list#product-retro-mixer": {
+    "children": [
+      "tab-list.item#product-retro-mixer1",
+      "tab-list.item#product-retro-mixer2"
+    ]
+  },
+  "tab-content#product-retro-mixer": {
+    "children": [
+      "tab-content.item#product-retro-mixer1",
+      "tab-content.item#product-retro-mixer2"
+    ]
+  },
+  "tab-list.item#product-retro-mixer1": {
+    "props": {
+      "tabId": "fotosItemsCocina",
+      "label": "Fotos Consecutivas de Items Cocina",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#product-retro-mixer2": {
+    "props": {
+      "tabId": "masFotosItemsCocina",
+      "label": "Mas Fotos Consecutivas de Items Cocina"
+    }
+  },
+  "tab-content.item#product-retro-mixer1": {
+    "children": [
+      "slider-layout#retro-mixer1"
+    ],
+    "props": {
+      "tabId": "fotosItemsCocina"
+    }
+  },
+  "tab-content.item#product-retro-mixer2": {
+    "children": [
+      "slider-layout#retro-mixer2"
+    ],
+    "props": {
+      "tabId": "masFotosItemsCocina"
+    }
   }
 }

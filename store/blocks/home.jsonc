@@ -85,7 +85,6 @@
       "image#desktop"
     ]
   },
-  
   "responsive-layout.mobile#mobile": {
     "children": [
       "rich-text#mobile",
