@@ -59,8 +59,7 @@
         "autoplay": {
           "timeout": 3000,
           "stopOnHover": true
-        }/*,
-        "maxHeight": 100*/
+        }
       }
     },
     "image#item-retro-mixer1": {
