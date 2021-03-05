@@ -6,7 +6,7 @@
     "children": ["image#about-us", "flex-layout.col#text-about-us"]
   },
   "flex-layout.col#text-about-us": {
-    "children": ["rich-text#about-title", "rich-text#about-content"],
+    "children": ["rich-text#about-title", "rich-text#about-subtitle", "rich-text#about-content"],
     "props": {
       "preventVerticalStretch": true
     }
@@ -16,9 +16,14 @@
       "text": "# About Minimum Theme"
     }
   },
+  "rich-text#about-subtitle":{
+    "props": {
+      "text": "## Our history \n Esta tienda fue creada por [German](https://www.linkedin.com/in/germ%C3%A1n-bonacchi-91b59a123 'First Party App Developer en VTEX') que estaba probando cosas en su **primer semana**. Para mas cursos mirar [aqui](https://developers.vtex.com/)."
+    }
+  },
   "rich-text#about-content": {
     "props": {
-      "text": "### This is the *VTEX Minimum Theme* \n  You can use it to test blocks usage and build your first store from scratch."
+      "text": "### This is the *VTEX Minimum Theme* \n You can use it to test blocks usage and build your first store from scratch."
     }
   },
   "image#about-us": {
